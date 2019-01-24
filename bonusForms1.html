@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Register: P.P. Dance Dog Walkers</title>
+</head>
+<body>
+    <header>
+        <h1>Register with P.P. Dance Dog Walkers</h1>
+    </header>
+<main>
+    <form method="POST" action="https://request-inspector.glitch.me/">
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="enter your email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" placeholder="enter your password">
+        </div>
+        <div>
+            <label for="dogOwner">Dog Owner Name</label>
+            <input id="dogOwner" type="text" name="dogOwner" placeholder="enter full name">
+        </div>
+        <div>
+            <label for="streetAddress">Street Address</label>
+            <input id="streetAddress" type="text" name="streetAddress" placeholder="enter street address">
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input id="city" type="text" name="city" placeholder="enter city">
+        </div>
+        <div>
+            <label for="state">State</label>
+            <input id="state" type="text" name="state" placeholder="enter state">
+        </div>
+        <div>
+            <label for="zip">Zip Code</label>
+            <input id="zip" type="text" name="zip" placeholder="enter zip code">
+        </div>
+        <div>
+            <label for="dogName">Dog Name</label>
+            <input id="dogName" type="text" name="dogName" placeholder="enter dog name">
+        </div>
+        <div>
+            <label for="breed">Breed</label>
+            <input id="breed" type="text" name="breed" placeholder="enter dog breed">
+        </div>
+        <label for="dogSize">Dog Size</label>
+
+        <select name="dogSize" id="dogSize">
+            <option value="small">Small (Chihuahua)</option>
+            <option value="medium">Medium (Bulldog)</option>
+            <option value="large">Large (Pit Bull)</option>
+            <option value="xl">Extra Large (Great Dane)</option>
+        </select><br>
+        <div>
+            <label><input name="vaccinations" value="true" type="checkbox" checked>Vaccinations Up To Date?</label>
+        </div>
+        <h4>What is your walking time preference?</h4>
+        <select name="walkTime">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+            <option value="np">No Preference</option>
+        </select>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</main>
+
+</body>
+</html>
