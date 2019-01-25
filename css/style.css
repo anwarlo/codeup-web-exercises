@@ -1,10 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 /*
 multi
 line
 comment
 */
-
+font-family {}
 .fancy-header {
     color: purple; /* single line comment */
     text-decoration: underline;
 }
+main {text-align: center
+}
+h1, h2 {
+    color: #3C67FF;
+    text-decoration: underline}
+body {
+    background-color: silver;
+    background-image: url("../img/prism.png");
+}
+ul {list-style: disc
+}
+td{
+    background-color: white;
+    padding: 5px 5px 10px 10px;
+    font-size: 1em;
+}
+
+tr {
+    background-color: lightgoldenrodyellow;
+    padding: auto;
+    font-size: 1em;
+}
+/* unvisited link (:link) */
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
+}
+
