@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Righteous');
 /*
 multi
 line
 comment
 */
-font-family {}
 .fancy-header {
     color: purple; /* single line comment */
     text-decoration: underline;
@@ -15,6 +13,7 @@ h1, h2 {
     color: #3C67FF;
     text-decoration: underline}
 body {
+    font-family: 'Major Mono Display', monospace;
     background-color: silver;
     background-image: url("../img/prism.png");
 }
