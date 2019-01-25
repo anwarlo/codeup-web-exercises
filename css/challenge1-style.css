@@ -1,0 +1,24 @@
+body{
+    font-family: "American Typewriter";
+    background-color: rgb(174,224,230);
+    color: rgb(25,15,138);
+}
+h1 {
+    color: rgb(5,1,136);
+    text-shadow: 4px 4px rgb(240,33,233);
+}
+h2 {
+    color: rgb(69,143,73);
+    font-weight: lighter;
+}section:nth-child(1) li{
+    text-decoration: underline;
+}
+section:nth-child(2) ol{
+    background-color: rgb(240,255,255);
+}
+section:nth-child(5) h2{
+    text-align: center;
+}
+section:nth-child(5) img{
+    transform: rotate(10deg)
+}
