@@ -1,0 +1,49 @@
+body, html {
+    height: 75%;
+    width: 75%;
+    padding: 2px;
+    margin: 2px;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message-info{
+    background-color: rgb(205,222,255);
+    border-style: solid;
+    border-color: silver;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(63,56,153);
+    margin: 5px 0px 5px 0px;
+}
+
+.message-success{
+    background-color: rgb(207,243,218);
+    border-style: solid;
+    border-color: silver;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(56,137,90);
+    margin: 5px 0px 5px 0px;
+}
+
+.message-warning{
+    background-color: rgb(252,251,201);
+    border-style: solid;
+    border-color: silver;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(163,148,54);
+    margin: 5px 0px 5px 0px;
+}
+.message-error{
+    background-color: rgb(250,211,215);
+    border-style: solid;
+    border-color: silver;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(145,46,70);
+    margin: 5px 0px 5px 0px;
+}
