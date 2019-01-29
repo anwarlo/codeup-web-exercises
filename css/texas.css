@@ -1,0 +1,20 @@
+.texas-flag {
+    margin: 3em;
+    width: 24em;
+    height: 16em;
+    box-shadow: 0 0 10px lightgray;
+    background: linear-gradient(white 50%, darkred 50%);
+}
+
+.texas-flag::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1em;
+    width: 33%;
+    height: 100%;
+    content: '★';
+    font-size: 6em;
+    color: white;
+    background: darkblue;
+}
