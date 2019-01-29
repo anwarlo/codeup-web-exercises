@@ -1,0 +1,9 @@
+.top-nav{
+    background-color: #848487;
+    width: 100%;
+}
+.nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
