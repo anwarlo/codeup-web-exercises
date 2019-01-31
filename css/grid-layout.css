@@ -44,7 +44,7 @@ img {
     }
 
     .one-third {
-        width: 33%;
+        width: 33.333%;
     }
 
     .one-fourth {
@@ -59,6 +59,6 @@ img {
         width: 16.6%;
     }
     .two-thirds {
-        width: 66%;
+        width: 66.666%;
     }
 }
