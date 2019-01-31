@@ -1,9 +1,19 @@
-.top-nav{
-    background-color: #848487;
+.top-nav {
+    background:slategrey;
     width: 100%;
+    position: fixed;
+    z-index: 1;
 }
-.nav{
-    list-style-type: none;
+.nav {
+    list-style: none;
     padding: 0;
     margin: 0;
+}
+.nav-item{
+    display: inline-block;
+    padding: 1.5em;
+}
+.nav-link {
+    font-weight: bold;
+    text-decoration: none;
 }
