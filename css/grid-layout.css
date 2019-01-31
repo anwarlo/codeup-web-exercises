@@ -38,22 +38,28 @@ img {
         width: 100%;
         padding: 0 10px;
         border: 1px solid black;
+        background: greenyellow;
     }
 
     .one-half {
         width: 50%;
+        border: 1px solid black;
+        background: aquamarine;
     }
 
     .one-third {
         width: 33%;
+        background: violet;
     }
 
     .one-fourth {
         width: 25%;
+        background: cornsilk;
     }
 
     .one-eighth {
         width: 12.5%;
+        background: burlywood;
     }
 
     .one-sixth {
