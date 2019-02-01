@@ -18,7 +18,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active" style="background-color: #DDDDDD">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Order Online <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -38,48 +38,94 @@
             </div>
         </nav>
     </div>
-    <header class="container">
+    <header class="container d-none d-md-block mt-3">
     <div class="jumbotron pizza-img px-0">
         <h1 class="text-center font-weight-normal">Welcome to Pizza World!</h1>
     </div>
-    <h1>Build your own pizza!</h1>
-        <form>
-            <nav>
-                <div>
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="size-tab" data-toggle="tab" href="#size" role="tab"
-                               aria-controls="size" aria-selected="true"><span
-                                    class="badge badge-pill badge-secondary">1</span>
-                                Size and crust</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="cheese-tab" data-toggle="tab" href="#cheese" role="tab"
-                               aria-controls="cheese" aria-selected="false"><span
-                                    class="badge badge-pill badge-secondary">2</span>
-                                Cheese and sauce</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="toppings-tab" data-toggle="tab" href="#toppings" role="tab"
-                               aria-controls="toppings" aria-selected="false"><span
-                                    class="badge badge-pill badge-secondary">3</span>
-                                Toppings</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">size
-                            and
-                            crust
-                        </div>
-                        <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese-tab">cheese and
-                            sauce
-                        </div>
-                        <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">toppings
+        <main class="container"><h2>Build your own pizza!</h2>
+            <hr>
+            <form action="" method="POST">
+                <nav>
+                    <div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="size-tab" data-toggle="tab" href="#size" role="tab"
+                                   aria-controls="size" aria-selected="true"><span
+                                        class="badge badge-pill badge-secondary">1</span>
+                                    Size and crust</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="cheese-tab" data-toggle="tab" href="#cheese" role="tab"
+                                   aria-controls="cheese" aria-selected="false"><span
+                                        class="badge badge-pill badge-secondary">2</span>
+                                    Cheese and sauce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="toppings-tab" data-toggle="tab" href="#toppings" role="tab"
+                                   aria-controls="toppings" aria-selected="false"><span
+                                        class="badge badge-pill badge-secondary">3</span>
+                                    Toppings</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
+                            </div>
+                            <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese-tab">cheese
+                                and
+                                sauce
+                            </div>
+                            <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">
+                                toppings
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </form>
+                    <div class="card">
+                        <div class="card-header text-white bg-primary mb-3">
+                            Choose size and crust
+                        </div>
+                        <div class="card-body"><!--inner card 1-->
+                            <div class="card">
+                                <div class="card-header">
+                                    Hand Tossed
+                                </div>
+                                <div><p class="card-text">Garlic seasoned crust with a rich buttery taste.</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input class="form-check-input" type="radio"
+                                                                           name="crust" id="tossedSmall"
+                                                                           value="tossedSmall">
+                                            <label class="form-check-label" for="tossedSmall">Small (10")</label>
+                                        </li>
+                                        <li class="list-group-item"><input class="form-check-input" type="radio"
+                                                                           name="crust" id="tossedMedium"
+                                                                           value="tossedMedium">
+                                            <label class="form-check-label" for="tossedMedium">Medium (12")</label></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    Crispy Thin
+                                </div>
+                                <div><p class="card-text">Thin enough for optimum crispy to crunch ratio.</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><input class="form-check-input" type="radio" name="crust" id="crispyMedium" value="crispyMedium">
+                                            <label class="form-check-label" for="crispyMedium">Medium (12")</label>
+                                        </li>
+                                        <li class="list-group-item"><input class="form-check-input" type="radio" name="crust" id="crispyLarge" value="crispyLarge">
+                                            <label class="form-check-label" for="crispyLarge">Large (14")</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    <div class="card-footer bg-light text-right">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Next Step <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </form>
+        </main>
     </header>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
