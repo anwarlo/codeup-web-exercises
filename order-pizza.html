@@ -1,0 +1,89 @@
+<!doctype html5>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Pizza World</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light nav-fill" style="background-color: #f8f8f8;">
+            <a class="navbar-brand text-muted" href="#">Pizza World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active" style="background-color: #DDDDDD">
+                        <a class="nav-link" href="#">Order Online <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
+                            <button class="btn btn-outline-secondary" style="background-color: white" type="submit">Search stores near you!</button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-0">
+                    <li><i class="fas fa-user"><a class="nav-link text-muted" href="#">Sign Up <span class="sr-only">(current)</span></a></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header class="container">
+    <div class="jumbotron pizza-img px-0">
+        <h1 class="text-center font-weight-normal">Welcome to Pizza World!</h1>
+    </div>
+    <h1>Build your own pizza!</h1>
+        <form>
+            <nav>
+                <div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="size-tab" data-toggle="tab" href="#size" role="tab"
+                               aria-controls="size" aria-selected="true"><span
+                                    class="badge badge-pill badge-secondary">1</span>
+                                Size and crust</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cheese-tab" data-toggle="tab" href="#cheese" role="tab"
+                               aria-controls="cheese" aria-selected="false"><span
+                                    class="badge badge-pill badge-secondary">2</span>
+                                Cheese and sauce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="toppings-tab" data-toggle="tab" href="#toppings" role="tab"
+                               aria-controls="toppings" aria-selected="false"><span
+                                    class="badge badge-pill badge-secondary">3</span>
+                                Toppings</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">size
+                            and
+                            crust
+                        </div>
+                        <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese-tab">cheese and
+                            sauce
+                        </div>
+                        <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">toppings
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </form>
+    </header>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- Your custom JS goes here -->
+</body>
+</html>
