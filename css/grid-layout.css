@@ -22,7 +22,14 @@ img {
 .row {
     width: 100%;
 }
+.row div {
+    background: lightgrey;
+    border: 1px solid black;
+}
 
+div.row {
+    margin-top: 2em;
+}
 .row:after {
     content: "";
     display: table;
