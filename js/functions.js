@@ -9,12 +9,17 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
+//function declaration//
 
-/* function sayHello(name) {
-    return name
-}
+/*function sayHello(name) {
+    return "Hello, " + name;
+};
 
-console.log(sayHello("Hello,"+" "+"codeup"+"!")) */
+/*function expression = ALTERNATIVE SYNTAX FOR DEFINING A FUNCTION USING A FUNCTION EXPRESSION
+var sayHello = function(name){
+    return"Hello" + name;
+    };
+ */
 
 /**
  * TODO:
@@ -24,8 +29,9 @@ console.log(sayHello("Hello,"+" "+"codeup"+"!")) */
  * console.log 'helloMessage' to check your work
  */
 
-//function sayHello(name) {
-//}
+/*
+var helloMessage = function sayHello(name) {
+*/
 
 
 
@@ -69,9 +75,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-//function isTwo() {
+/*function isTwo(num){
+    return num === 2;
+}
+
+console.log(isTwo(num, 2))
 //    return false;
-//}
+*/
 
 
 /**
@@ -85,6 +95,8 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+
+
 
 /**
  * TODO:
