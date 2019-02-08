@@ -1,5 +1,5 @@
 "use strict";
-console.log("Hello from external Javascript")
+//console.log("Hello from external Javascript")//
 alert("Welcome to my Website!");
 var color=prompt("What is your favorite color?");
 alert(("Great, ")+color+(" is my favorite color too!"));
@@ -43,4 +43,4 @@ var isPremiumMember = confirm("You a premium member?"); // boolean
 
 var productDiscountApplied = (premiumMember || numberOfItems > 2) && offerValid;
 
-alert("Product discount status is:" + productDiscountApplied);
+alert("Product discount status is:" + productDiscountApplied);//
