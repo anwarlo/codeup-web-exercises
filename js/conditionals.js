@@ -70,6 +70,12 @@
 //                  will contain a different color everytime the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+function analyzeColor(colorName) {
+    return console.log(colorName);
+}
+
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
