@@ -207,29 +207,29 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-function calculateTotal(luckyNum, totalAmount) {
-    if (luckyNum === 1) {
-        return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.10);
-    }
-    else if (luckyNum === 2) {
-        return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.25);
-    }
-    else if (luckyNum === 3) {
-        return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.35);
-    }
-    else if (luckyNum === 4) {
-        return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.50);
-    }
-    else if (luckyNum === 5) {
-        return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.1);
-    }
-    else if (luckyNum === 0) {
-        return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 1);
-    }
-
-}
-
-console.log(calculateTotal(1,100));
+// function calculateTotal(luckyNum, totalAmount) {
+//     if (luckyNum === 1) {
+//         return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.10);
+//     }
+//     else if (luckyNum === 2) {
+//         return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.25);
+//     }
+//     else if (luckyNum === 3) {
+//         return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.35);
+//     }
+//     else if (luckyNum === 4) {
+//         return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.50);
+//     }
+//     else if (luckyNum === 5) {
+//         return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 0.1);
+//     }
+//     else if (luckyNum === 0) {
+//         return "Your discounted price is" + " " + "$" + (totalAmount) - (totalAmount * 1);
+//     }
+//
+// }
+//
+// console.log(calculateTotal(1,100));
 
 // /**
 //  * TODO:
