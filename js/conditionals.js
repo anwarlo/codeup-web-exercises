@@ -41,6 +41,32 @@
 // }
 
 
+// var question = confirm("Would you like to enter a number?");
+//
+// function numberInfo(num) {
+//     if (question) {
+//         num = prompt("Choose a number");
+//     }
+//     if (!isNaN(num)) {
+//
+//         if (num % 2 === 0) {
+//             alert("Is an even number");
+//         } else {
+//             alert("Is an odd number");
+//         }
+//         alert("Here is your number plus one hundred" + ":" + " " + (+num + 100));
+//
+//         if (num > 0) {
+//             alert("Your number is positive");
+//         } else {
+//             alert("Your number is negative")
+//         }
+//     } else {
+//         alert("This is not a number!")
+//     }
+// }
+//
+// numberInfo();
 
 
 /* ########################################################################## */
@@ -69,8 +95,8 @@
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color everytime the page loads)
 
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 // function analyzeColor(colorName) {
 //     if (colorName === "red") {
@@ -157,7 +183,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
 // function analyzeColor(colorName) {
 //     switch (colorName) {
-//         case    "red":
+//         case "red":
 //             alert("Strawberries are" + " " + colorName);
 //             break;
 //         case "blue":
@@ -207,28 +233,28 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-// function calculateTotal(luckyNum, totalAmount) {
-//     if (luckyNum === 1) {
-//         return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.10));
+// function calculateTotal(luckyNumber, totalAmount) {
+//     switch (luckyNum) {
+//         case 1:
+//             return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.10));
+//             break;
+//         case 2:
+//             return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.25));
+//             break;
+//         case 3:
+//             return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.35));
+//             break;
+//         case 4:
+//             return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.50));
+//             break;
+//         case 5:
+//             return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.1));
+//             break;
+//         case 0:
+//             return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 1));
+//             break;
 //     }
-//     else if (luckyNum === 2) {
-//         return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.25));
-//     }
-//     else if (luckyNum === 3) {
-//         return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.35));
-//     }
-//     else if (luckyNum === 4) {
-//         return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.50));
-//     }
-//     else if (luckyNum === 5) {
-//         return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 0.1));
-//     }
-//     else if (luckyNum === 0) {
-//         return "Your discounted price is" + " " + "$" + (totalAmount - (totalAmount * 1));
-//     }
-//
 // }
-//
 // console.log(calculateTotal(1,100));
 
 // /**
@@ -238,5 +264,34 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //  * and alerts to display to the user what their lucky number was, what their
 //  * price before the discount was, and what their price after the discount is.
 //  *
-// // Generate a random number between 0 and 6
-// // var luckyNumber = Math.floor(Math.random() * 6)//
+
+// Generate a random number between 0 and 6
+
+// var luckyNumber = Math.floor(Math.random() * 6);
+//
+// var totalAmount = prompt("What was your total bill?");
+//
+// function calculateTotal(luckyNumber, totalAmount) {
+//     switch (luckyNumber) {
+//         case 1:
+//             alert("Your lucky number was " + luckyNumber + "; price before discount is:$" + totalAmount + " and your total comes out to:$" + (totalAmount - (totalAmount * 0.10)));
+//             break;
+//         case 2:
+//             alert("Your lucky number was " + luckyNumber + "; price before discount is:$" + totalAmount + " and your total comes out to:$" + (totalAmount - (totalAmount * 0.25)));
+//             break;
+//         case 3:
+//             alert("Your lucky number was " + luckyNumber + "; price before discount is:$" + totalAmount + " and your total comes out to:$" + (totalAmount - (totalAmount * 0.35)));
+//             break;
+//         case 4:
+//             alert("Your lucky number was " + luckyNumber + "; price before discount is:$" + totalAmount + " and your total comes out to:$" + (totalAmount - (totalAmount * 0.50)));
+//             break;
+//         case 5:
+//             alert("Your lucky number was " + luckyNumber + "; price before discount is:$" + totalAmount + " and your total comes out to:$" + (totalAmount - (totalAmount * 0.1)));
+//             break;
+//         case 0:
+//             alert("Your lucky number was " + luckyNumber + "; price before discount is:$" + totalAmount + " and your total comes out to:$" + (totalAmount));
+//             break;
+//     }
+// }
+//
+// (calculateTotal(luckyNumber,totalAmount));
