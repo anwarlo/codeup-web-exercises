@@ -7,38 +7,87 @@ Functions using conditionals but not loops or arrays:*/
 
 //    * Make a function named |isOdd(number)|
 
-function isOdd(num) {
-    return num % 2;
-}
+function isOdd(number){
 
-console.log()
+}
 
 // /** Make a function named |isEven(number)|
 
+function isEven(number){
+
+}
 
 // * Make a function named |identity(input)| that returns the input exactly as provided.
 
+function identity(input) {
+    return input;
+}
+
 // * Make a function named |isFive(input)|
+
+function isFive(input) {
+
+}
 
 // * Make a function named |addFive(input)| that adds five to some input.
 
+function addFive(input) {
+    return +input + 5;
+}
+
 // * Make a function named |isMultipleOfFive(input)|
+
+function isMultipleofFive(input) {
+
+}
 
 // * Make a function named |isThree(input)|
 
+function isThree(input) {
+
+}
+
 // * Make a function named |isMultipleOfThree(input)|
+
+function isMultipleofThree(input) {
+
+}
 
 // * Make a function named |isMultipleOfThreeAndFive(input)|
 
+function isMultipleofThreeAndFive(input) {
+
+}
+
 // * Make a function named |isMultipleOf(target, n)| which checks if target is evenly divisible by |n|
+
+function isMultipleOf(target,n) {
+
+}
 
 // * Make a function named |isTrue(boolean)|
 
+function isTrue(boolean) {
+
+}
+
 // * Make a function named |isFalse(boolean)|
+
+function isFalse(boolean) {
+
+}
 
 // * Make a function named |isTruthy(input)|, remember that values other than true will behave like true
 
+function isTruthy(input) {
+
+}
+
 // * Make a function named |isFalsy(input)|, remember that values other than false behave like false
+
+function isFasly(input) {
+
+}
 
 // * Make a function named |isVowel(letter)|
 
