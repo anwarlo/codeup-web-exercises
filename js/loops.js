@@ -108,16 +108,36 @@
 //     console.log("The even number is " + i);
 // }
 
+//
+// function cubed(x) {
+//     for (let a = 1; a <= x; a++){
+//         if(a % 2 === 0){
+//             continue;
+//         }
+//         if (a === x){
+//             break;
+//         }
+//         console.log("The cube of " + a + " is " + a*a*a);
+//     }
+// }
+// cubed(35);
 
-function cubed(x) {
-    for (let a = 1; a <= x; a++){
-        if(a % 2 === 0){
-            continue;
-        }
-        if (a === x){
-            break;
-        }
-        console.log("The cube of " + a + " is " + a*a*a);
-    }
+var shapes = ['square', 'rectangle', 'circle', 'triangle'];
+
+// loop through the array and log the values
+for (var i = 0; i < shapes.length; i++) {
+    console.log('The shape at index ' + i + ' is: ' + shapes[i]);
 }
-cubed(35);
+
+var dogs = [
+    true,
+    'chihuahua',
+    'husky',
+    'pug',
+    'other dogs'
+];
+
+dogs.forEach(function (dog,index,array) {
+    console.log(dog +"" + array);
+});
+
