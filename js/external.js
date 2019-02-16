@@ -12,35 +12,35 @@ var total=  dailyFee*littleMermaid+hercules+brotherBear;
 
 alert("Your total movie rental fees are"+" "+"$"+totalPayment.toFixed(2);
 
-var googleHourlyRateDollars=prompt("What is your G rate in dollars?");
-var amazonHourlyRateDollars="What is your AZ rate in dollars?";
-var facebookHourlyRateDollars="What is your FB rate in dollars?";
+var googleHourlyRateDollars = prompt("What is the Google hourly rate in dollars?");
+var amazonHourlyRateDollars = prompt("What is the Amazon hourly rate in dollars?");
+var facebookHourlyRateDollars = prompt("What is the Facebook hourly rate in dollars?");
 
-var googleHours=prompt("How many hour did you work for at G?");
-var amazonHours;
-var facebookHours;
+var googleHours = prompt("How many hours were worked at Google?");
+var amazonHours = prompt("How many hours were worked at Amazon?");
+var facebookHours = prompt("How many hours were worked at Facebook?");
 
 var totalPayment;
-
-totalWagesEarned
 
 totalPayment = googleHours * googleHourlyRateDollars;
 totalPayment += amazonHours * amazonHourlyRateDollars;
 totalPayment += facebookHours * facebookHourlyRateDollars;
 
+alert("Total wages earned: $" + totalPayment.toFixed(2));
+
 
 var classIsFull = confirm("Confirm that class is full"); // boolean
 var classSchedulesCheck = confirm("Confirm that schedules check out"); // boolean
 
-var studentEnrolled = !classFull && classSchedulesCheck;
+var studentEnrolled = !classIsFull && classSchedulesCheck;
 
-alert("student enrollment status" + studentEnrolled)
+alert("student enrollment status" + studentEnrolled);
 
 
 var numberOfItems = prompt("How many items"); // number
 var offerIsValid = confirm("Offer is valid"); // boolean
 var isPremiumMember = confirm("You a premium member?"); // boolean
 
-var productDiscountApplied = (premiumMember || numberOfItems > 2) && offerValid;
+var productDiscountApplied = (isPremiumMember || numberOfItems > 2) && offerIsValid;
 
 alert("Product discount status is:" + productDiscountApplied);
