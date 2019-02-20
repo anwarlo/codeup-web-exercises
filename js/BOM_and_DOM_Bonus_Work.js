@@ -4,15 +4,24 @@
 //
 // Create an application that will calculate the volume of a building based on user input.
 // Account for multiple rooms and a user choice of measurement (between imperial or metric).
-//
-//
+
+
+
 // ================================= BOM BONUSES
 //
 //
 // BONUS 1: Build a Jack-In-The-Box
 //
 // Define an object called jackBox.
-//
+
+var jackBox = {
+    triggered: false,
+    intervalId: null,
+    play(): "",
+    windUp: "",
+    lyrics: ["All a-...","-round the ...","mulberry...","bush, The...","monkey...","chased the...","wea-...","wea-...","The monkey...","stopped to...","pull up his...","sock,...","Pop!...","goes the...","wea-...","-sel."]
+        };
+
 // Include properties for...
 //      triggered - whether or not the box has been sprung (should be false by default)
 //     intervalId - set to null
