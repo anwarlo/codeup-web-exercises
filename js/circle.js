@@ -18,6 +18,8 @@
             // }
             if (doRounding){
                 console.log("Area of a circle with radius: " + this.radius + ", is: " + Math.round(this.getArea()));
+                // Better practice to do a return like this: return "Area of a circle with radius: " + this.radius + ", is: " + Math.round(this.getArea());
+
 
             }
             // If doRounding is true, round the result to the nearest integer.
