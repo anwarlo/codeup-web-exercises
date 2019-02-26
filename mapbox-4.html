@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+<!-- Custom JS -->
+<script src="js/keys.js"></script>
+<script>
+    mapboxgl.accessToken = mapboxKey;
+    // var map = new mapboxgl.Map({
+    //     container: 'map',
+    //     style: 'mapbox://styles/mapbox/streets-v9',
+    //     zoom: 10,
+    //     center: [-98.4916, 29.4252]
+    //
+    // });
+    // var newMap = new mapboxgl.Map;({
+    //     container: 'map',
+    //     style: 'mapbox://styles/mapbox/streets-v9',
+    //     zoom: 5,
+    //     center: [39.83,-98.58]
+    // });
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v10',
+        center: [-98.2937,29.2526],
+        zoom: 9
+    });
+    // setTimeout(function() {
+    //     map
+    //         .setCenter: [39.83,-98.58],
+    //         .setZoom: 5,
+    // }, 3000 * index);
+    // var marker = new mapboxgl.Marker();
+    // //
+    // marker.setLngLat([-96.6741,40.7926]);
+    // marker.setLngLat(map.getCenter());
+    // marker.addTo(map);
+
+    // var popup = new mapboxgl.Popup({closeOnClick: false});
+    // // popup.setLngLat(map.getCenter());
+    // popup.setHTML('<h1>Lincoln Memorial</h1>');
+    // popup.addTo(map);
+    //
+    // marker.setPopup(popup);
+
+
+    setTimeout(function() {
+        map
+            .setCenter([-112.98905 ,37.199276])
+            .setZoom(5)
+    }, 1000 * index);
+
+</script>
+</body>
+</html>
+<!--Mini - Exercise 4-->
+
+<!--Create an HTML file called mapbox-4.html centered on San Antonio that programmatically is re-centered over Zion National Park using the coordinates of the park by geocoding the physical address.-->
+
+<!--Add the latitude and longitude of Honolulu, Hawaii and use reverse geocoding to move the map to this location.-->

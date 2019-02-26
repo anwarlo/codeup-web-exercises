@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator JS</title>
+</head>
+<body>
+<h1>Here is some webpage text!</h1>
+<br>
+<br>
+<table class = "calculator">
+
+    <tr>
+
+
+        <td colspan='4'>
+            <form action="">
+                <div class="calc">
+                    <input type="text" value="" id="outputLeft"/>
+                    <input type="text" value="" id="outputMid"/>
+                    <input type="text" value="" id="outputRight"/>                </div>
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+
+        <td><input class="calc" type="button" value="1" onclick="inputString =  updateString('1');"/></td>
+        <td><input class="calc" type="button" value="2" onclick="inputString = updateString('2');"/></td>
+        <td><input class="calc" type="button" value="3" onclick="inputString = updateString('3');"/></td>
+        <td><input class="calc" type="button" value='/' onclick="inputString = updateString('/');"/></td>
+    </tr>
+    <tr>
+        <td><input class="calc" type="button" value="4" onclick="inputString = updateString('4');"/></td>
+        <td><input class="calc" type="button" value="5" onclick="inputString = updateString('5');"/></td>
+        <td><input class="calc" type="button" value="6" onclick="inputString = updateString('6');"/></td>
+        <td><input class="calc" type="button" value='*' onclick="inputString = updateString('*');"/></td>
+    </tr>
+    <tr>
+        <td><input class="calc" type="button" value="7" onclick="inputString = updateString('7');"/></td>
+        <td><input class="calc" type="button" value="8" onclick="inputString = updateString('8');"/></td>
+        <td><input class="calc" type="button" value="9" onclick="inputString = updateString('9');"/></td>
+        <td><input class="calc" type="button" value='-' onclick="inputString = updateString('-');"/></td>
+    </tr>
+    <tr>
+        <td><input class="calc" type="button" value="0" onclick="inputString = updateString('0');"/></td>
+        <td><input class="calc" type="button" value='.' onclick="inputString = updateString('.');"/></td>
+        <td><input class="calc" type="button" value='C' onclick="inputString = updateString('C');"/></td>
+        <td><input class="calc" type="button" value='+' onclick="inputString = updateString('+');"/></td>
+    </tr>
+    <tr>
+        <td><input class="calc" type="button" value='=' onclick=" document.getElementById('outputBox').value = eval(inputString);"/></td>
+    </tr>
+
+
+</table>
+<script src="js/calculator.js"></script>
+
+</body>
+</html>

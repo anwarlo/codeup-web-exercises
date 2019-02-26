@@ -13,14 +13,22 @@
 // BONUS 1: Build a Jack-In-The-Box
 //
 // Define an object called jackBox.
-
+var i = 0;
 var jackBox = {
     triggered: false,
-    intervalId: null,
-    play(): "",
-    windUp: "",
+    play: setInterval(function()){
+        if (triggered === false){
+        console.log(lyrics[i]);
+        i++
+        }
+        },1000)
+    windUp: function () {
+        if ()
+    },
     lyrics: ["All a-...","-round the ...","mulberry...","bush, The...","monkey...","chased the...","wea-...","wea-...","The monkey...","stopped to...","pull up his...","sock,...","Pop!...","goes the...","wea-...","-sel."]
         };
+var intervalId = null;
+
 
 // Include properties for...
 //      triggered - whether or not the box has been sprung (should be false by default)
