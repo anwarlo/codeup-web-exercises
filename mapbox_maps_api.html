@@ -35,23 +35,30 @@
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
         zoom: 20,
-        center: [-98.493909, 29.447414]
+        center: [-98.4951, 29.4246]
     });
 
-    // the  geocode method from mapbox-geocoder-utils.js
-    // geocode("1906 N Main Ave, San Antonio, TX 78212", mapboxKey).then(function(result) {
-    //     console.log(result);
-    //     map.setCenter(result);
-    //     map.setZoom(20);
-    // });
+    geocode("1906 N Main Ave, San Antonio, TX 78212", mapboxKey).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(18);
+    });
 
     var popup = new mapboxgl.Popup()
-            .setHTML('<h1>Pizza Pie till I Die!</h1>')
+            .setHTML('<h1>Main Street Pizza & Pasta</h1>')
             .addTo(map)
     var marker = new mapboxgl.Marker()
             .setLngLat([-98.493909, 29.447414])
             .addTo(map)
-marker.setPopup(popup)
+      marker.setPopup(popup)
+
+            setTimeout(function() {
+                map.jumpTo(geocode(function (result) {
+                }));
+            }, 5000);
+
+
+
 
 </script>
 </body>
