@@ -91,20 +91,36 @@
 
     // $(document).ready(function() {
     //     $('p').dblclick(function () {
+    //         $('p').css('font-size','18px');
+    //     });
+    // });
+
+
+    //Now one by one...
+
+    // $(document).ready(function() {
+    //     $('p').dblclick(function () {
     //         $(this).css('font-size','18px');
     //     });
     // });
 
+    //Alternate version
+
+    // $(document).ready(function() {
+    //     $('p').dblclick(function (e) {
+    //         $(e.target).css('font-size','18px');
+    //     });
+    // });
 
     //     Set all li text color to red when the mouse is hovering, reset to black when it is not.
 
     $(document).ready(function() {
         $('li').hover(
             function() {
-                $(this).css('background-color', '#FF0000');
+                $(this).css('color', '#FF0000');
             },
             function() {
-                $(this).css('background-color', '#000');
+                $(this).css('color', '#000');
             }
         );
     });
