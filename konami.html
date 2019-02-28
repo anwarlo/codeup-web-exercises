@@ -6,12 +6,57 @@
 <body>
 <h1>Konami Code</h1>
 
-<script src="/js/jquery.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
 <script>
     "use strict";
 
-    $(document).keyup(function(event){
-        console.log(event.keyCode);
+    $(document).ready(function() {
+
+        var konamiCode = ["ArrowUp", "ArrowUp",
+            "ArrowDown, ArrowDown",
+            "ArrowLeft, ArrowRight",
+            "ArrowLeft, ArrowRight",
+            "b",
+            "a",
+            "Enter"];
+
+        // var konamiCode = [38, 38,
+        //     40, 40,
+        //     37, 39,
+        //     37, 39,
+        //     66,
+        //     65,
+        //     13];
+
+        // var keyInput = [];
+        //
+        // $(document).keydown(function (e) {
+        //     console.log(e.key);
+        // });
+        //
+        // $(document).keydown(function (e) {
+        //     keyInput.push(e.key);
+        // });
+
+
+
+        // $(document).on("keydown", function (e) {
+        //     if (keyInput === konamiCode)
+        //         console.log("You entered the Konami Code");
+        // });
+
+// log key inputs
+// store inputs
+// check if they match konami code
+// store konami code for comparing
+// alert the user
+// change the background screen
+// play a sound
+// be creative
+
+
+
+
     });
 </script>
 </body>
