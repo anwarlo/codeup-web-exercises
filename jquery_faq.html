@@ -3,68 +3,62 @@
 <head>
     <title>jQuery FAQ</title>
     <style>
-        .centered {
-            text-align: center;
+        .invisible {
+            visibility: hidden;
         }
-        .highlighted {
-            background-color: #FF0;
-        }
+        /*.highlighted {*/
+            /*background-color: #FF0;*/
+        /*}*/
     </style>
 </head>
 <body>
 <h1>National Parks FAQs</h1>
 <dl>
     <dt>1 Beast of Bodmin</dt>
-    <dd>A large feline inhabiting Bodmin Moor.</dd>
+    <dd class="invisible">A large feline inhabiting Bodmin Moor.</dd>
 
     <dt>2 Morgawr</dt>
-    <dd>A sea serpent.</dd>
+    <dd class="invisible">A sea serpent.</dd>
 
     <dt>3 Owlman</dt>
-    <dd>A giant owl-like creature.</dd>
+    <dd class="invisible">A giant owl-like creature.</dd>
 
     <dt>4 Beast of Bodmin</dt>
-    <dd>A large feline inhabiting Bodmin Moor.</dd>
+    <dd class="invisible">A large feline inhabiting Bodmin Moor.</dd>
 
     <dt>5 Morgawr</dt>
-    <dd>A sea serpent.</dd>
+    <dd class="invisible">A sea serpent.</dd>
 
     <dt>6 Owlman</dt>
-    <dd>A giant owl-like creature.</dd>
+    <dd class="invisible">A giant owl-like creature.</dd>
 
     <dt>7 Beast of Bodmin</dt>
-    <dd>A large feline inhabiting Bodmin Moor.</dd>
+    <dd class="invisible">A large feline inhabiting Bodmin Moor.</dd>
 
     <dt>8 Morgawr</dt>
-    <dd>A sea serpent.</dd>
+    <dd class="invisible">A sea serpent.</dd>
 
     <dt>9 Owlman</dt>
-    <dd>A giant owl-like creature.</dd>
+    <dd class="invisible">A giant owl-like creature.</dd>
 
     <dt>10 Owlman</dt>
-    <dd>A giant owl-like creature.</dd>
+    <dd class="invisible">A giant owl-like creature.</dd>
 
 </dl>
 
+<h3 id="invisalator">Invisibilify</h3>
 
-<script src="/js/jquery-3.3.1.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
 <script>
-    "use strict";
 
     $(document).ready(function() {
-        $('dd').addClass('invisible');
-        $('.invisible').click(function(e) {
+        "use strict";
+
+        $('#invisalator').click(function(e) {
             e.preventDefault();
-            $('.invisible').css('visibility', 'hidden');
-            $('dd').toggleClass('visibility');
+            $('dd').toggleClass('invisible');
         });
 
-
-
-            // $('#highlight-important').click(function(event) {
-        //     event.preventDefault();
-        //     $('.important').toggleClass('highlighted');
-        // });
 
     });
 </script>
