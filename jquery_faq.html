@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Example jQuery Page</title>
+    <title>jQuery FAQ</title>
     <style>
         .centered {
             text-align: center;
@@ -12,27 +12,60 @@
     </style>
 </head>
 <body>
-<h1>Example Page</h1>
-<div class="centered important highlighted">
-    <h3>NOTICE</h3>
-    <p>This is an important message!</p>
-</div>
-<div class="not-important">
-    <h2>Lorem Ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, incididunt ut <span class="important highlighted">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
-</div>
-<p class="centered important highlighted">This is also very important.</p>
-<a href="#" id="highlight-important">Click to toggle the highlighting of important text.</a>
+<h1>National Parks FAQs</h1>
+<dl>
+    <dt>1 Beast of Bodmin</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
 
-<script src="/js/jquery.js"></script>
+    <dt>2 Morgawr</dt>
+    <dd>A sea serpent.</dd>
+
+    <dt>3 Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+
+    <dt>4 Beast of Bodmin</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>5 Morgawr</dt>
+    <dd>A sea serpent.</dd>
+
+    <dt>6 Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+
+    <dt>7 Beast of Bodmin</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>8 Morgawr</dt>
+    <dd>A sea serpent.</dd>
+
+    <dt>9 Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+
+    <dt>10 Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+
+</dl>
+
+
+<script src="/js/jquery-3.3.1.js"></script>
 <script>
     "use strict";
 
     $(document).ready(function() {
-        $('#highlight-important').click(function(event) {
-            event.preventDefault();
-            $('.important').toggleClass('highlighted');
+        $('dd').addClass('invisible');
+        $('.invisible').click(function(e) {
+            e.preventDefault();
+            $('.invisible').css('visibility', 'hidden');
+            $('dd').toggleClass('visibility');
         });
+
+
+
+            // $('#highlight-important').click(function(event) {
+        //     event.preventDefault();
+        //     $('.important').toggleClass('highlighted');
+        // });
+
     });
 </script>
 </body>
