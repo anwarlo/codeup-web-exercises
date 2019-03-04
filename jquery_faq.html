@@ -46,7 +46,35 @@
 
 </dl>
 
+<h1>Parks List</h1>
+<h3>National Parks</h3>
+<ul id="national-parks">
+    <li>Arches</li>
+    <li>Badlands</li>
+    <li>Carlsbad Caverns</li>
+    <li>Denali</li>
+    <li>Everglades</li>
+</ul>
+<h3>State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Abilene</li>
+    <li>Big Bend</li>
+    <li>Choke Canyon</li>
+    <li>Davis Mountains</li>
+    <li>Enchanted Rock</li>
+</ul>
+<h3>LAMP plus JS</h3>
+<ul>
+    <li>Linux</li>
+    <li>Apache</li>
+    <li>MySQL</li>
+    <li>PHP</li>
+    <li>Javascript</li>
+</ul>
+
 <h3 id="invisalator">Invisibilify</h3>
+
+<button>Highlight List</button>
 
 <script src="js/jquery-3.3.1.js"></script>
 <script>
@@ -54,10 +82,34 @@
     $(document).ready(function() {
         "use strict";
 
-        $('#invisalator').click(function(e) {
+
+        $('button').click(function(e) {
             e.preventDefault();
-            $('dd').toggleClass('invisible');
+            console.log("test");
+            $('ul').each(function (index,element) {
+                $(element).children().last().css('background','#FFFF00');
+            });
         });
+
+        $('h3').click(function(e) {
+            e.preventDefault();
+            console.log("test2");
+            $('ul').each(function (index,element) {
+                $(element).children().css('font-weight','bold');
+            });
+        });
+
+        $('li').click(function(e) {
+            e.preventDefault();
+            console.log("test4");
+            $('li').each(function (index,element) {
+                $(element).parent().css('color','blue');
+            });
+        });
+        // $('#invisalator').click(function(e) {
+        //     e.preventDefault();
+        //     $('dd').toggleClass('invisible');
+        // });
 
 // $('p').each(function (index,element) {
 //     console.log(index);
