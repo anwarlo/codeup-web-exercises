@@ -6,20 +6,22 @@
 </head>
 <body>
 
-<h1>My Tool Store</h1>
+<div class="container">
+    <h1 class="text-center">My Tool Store</h1>
 
-<table id="products" class="table">
-    <thead class="thead-dark">
+    <table id="products" class="table table-striped table-hover">
+        <thead class="thead-dark">
         <tr>
             <th>Title</th>
             <th>Quantity</th>
             <th>Price</th>
             <th>Categories</th>
         </tr>
-    </thead>
-    <tbody id="insertProducts"></tbody>
-</table>
-<button id="refresh-btn" class="btn btn-dark">Refresh Table</button>
+        </thead>
+        <tbody id="insertProducts"></tbody>
+    </table>
+    <button id="refresh-btn" class="btn btn-dark">Refresh Table</button>
+</div>
 <script src="js/jquery-3.3.1.js"></script>
 
 <script>
@@ -51,12 +53,12 @@ $(document).ready(function() {
         type: 'GET',
         success: function(data) {
             console.log(data);
-            for ( var i = 0; i < 4; i++ ){
+            for ( var i = 0; i < data.length; i++ ){
                $('#insertProducts').append('<tr>' +
-                '<td>' + data[i].title+'</td>'+
-                '<td>' + data[i].quantity+'</td>'+
+                '<td>' + data[i].title + '</td>'+
+                '<td>' + data[i].quantity + '</td>'+
                 '<td>' + data[i].price + '</td>'+
-                '<td>' + data[i].categories.toString() + '</td>'+
+                '<td>' + data[i].categories.join(', ') + '</td>'+
                 '</tr>');
             }
         }
@@ -67,6 +69,8 @@ $(document).ready(function() {
     }
 
     $("#refresh-btn").on("click", RefreshTable);
+
+
 
     // OR CAN THIS WAY
     //
