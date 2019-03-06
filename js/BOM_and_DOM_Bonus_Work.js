@@ -25,7 +25,7 @@ var jackBox = {
     windUp: function () {
         if ()
     },
-    lyrics: ["All a-...","-round the ...","mulberry...","bush, The...","monkey...","chased the...","wea-...","wea-...","The monkey...","stopped to...","pull up his...","sock,...","Pop!...","goes the...","wea-...","-sel."]
+    lyrics: ["All a-...","-round the ...","mulberry...","bush, The...","monkey...","chased the...","wea-...","...-sel","The monkey...","stopped to...","pull up his...","sock,...","Pop!...","goes the...","wea-...","-sel."]
         };
 var intervalId = null;
 
