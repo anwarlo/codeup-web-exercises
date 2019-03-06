@@ -88,6 +88,39 @@ $(document).ready(function () {
 
         // +++++++++++++++++++++++++++++++++++++++++++++++++++++QUESTIONS+++++++++++++++++++++++++++++++++++++++++++++++++++++
                                             // (For solutions to all questions, see below)
+    var url = "https://www.swapi.co/api/people/";
+    // for (var i = 1; i < 88; i++){
+    //     var response = $.ajax(url + i + '/');
+    //     response.done(function (data,status,res) {
+    //         console.log(data.url + ' = ' + data.name);
+    //     });
+    //     response.fail(function (req,status,error) {
+    //         console.log(req);
+    //     });
+    //     response.always(function () {
+    //         console.log(i);
+    //     })
+    // }
+
+    var response = $.ajax(url);
+
+
+    // response.done(function (data) {
+    //     console.log(data.name);
+    // });
+    // for (var i = 1; i < 100; i++){}
+    // console.log(i);
+    // console.log(response.response.JSON.name);
+
+    // response.done(function (data) {
+    //     console.log(data.name);
+    // });
+    // for (var i = 1; i < 100; i++){}
+    // console.log(i);
+
+    // response.fail(function (){
+    //     console.log("This is not the response your looking for...");
+    // })
 
 
         // ========================= without traversal methods =========================
@@ -144,9 +177,9 @@ $(document).ready(function () {
 
         // Highlight the entire ordered list when a list item is clicked
 
-            $('li').click(function (e) {
-                e.target().parent().css('background','yellow')
-            })
+            // $('li').click(function (e) {
+            //     e.target().parent().css('background','yellow')
+            // })
 
 
         // ========================= .each() =========================

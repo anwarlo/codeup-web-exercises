@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Blog</title>
+</head>
+<body>
+
+<h1>Ajax Blog</h1>
+
+<div id="posts"></div>
+
+<script src="js/jquery-3.3.1.js"></script>
+
+<script>
+    $(document).ready(function() {
+        "use strict";
+
+
+        $.ajax({
+            url: 'data/blog.json',
+            type: 'GET',
+            success: function(data) {
+                console.log(data);
+                for ( var i = 0; i < 2; i++ ){
+                    $('#posts').append('<br>' +
+                        '<h3>' + data[i].title + '</h3>'+
+                        '<article>' + data[i].content + '</article>'+
+                        '<h5>' + data[i].categories.toString() + '</h5>'+
+                        '<h5>' + data[i].date + '</h5>'+
+                        '</br>');
+                }
+            }
+        })
+
+
+        // Ajax Blog
+        //
+        //     At minimum, your ajax blog will need an empty <div> with an id of posts.
+
+
+        //     Add your own Bootstrap theme to this file as well. Feel free to use the same one as your store or choose a different one.
+
+
+        //     Use ajax to load the contents of blog.json and add the data from it to your #posts div.
+
+
+        //     Add additional entries to blog.json and make sure your changes are reflected on the page.
+
+    });
+</script>
+
+</body>
+</html>
