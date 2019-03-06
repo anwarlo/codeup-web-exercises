@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Online Store</title>
 </head>
 <body>
 
 <h1>My Tool Store</h1>
 
-<table id="products">
-    <thead>
+<table id="products" class="table">
+    <thead class="thead-dark">
         <tr>
             <th>Title</th>
             <th>Quantity</th>
@@ -18,7 +19,7 @@
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
-
+<button id="refresh-btn" class="btn btn-dark">Refresh Table</button>
 <script src="js/jquery-3.3.1.js"></script>
 
 <script>
@@ -59,8 +60,19 @@ $(document).ready(function() {
                 '</tr>');
             }
         }
-    })
+    });
 
+    function RefreshTable() {
+        $( "#products" ).load( "ajax-store.html #mytable" );
+    }
+
+    $("#refresh-btn").on("click", RefreshTable);
+
+    // OR CAN THIS WAY
+    //
+    // $("#refresh-btn").on("click", function() {
+    //    $( "#mytable" ).load( "your-current-page.html #mytable" );
+    // });
 
 // $.get("data/inventory.json",function (data) {
 //     data.forEach(function (data) {
