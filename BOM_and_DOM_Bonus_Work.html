@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /*body {background-color: powderblue;}*/
+        /*h1   {color: blue;}*/
+        #stopwatch:after {
+            /*content: "";*/
+            display: block;
+            /*position: "";*/
+            top: 0;
+            left: 0;
+            background-image: url(img/space-jam-watch.jpg);
+            width: 25%;
+            height: 25%;
+            opacity: 0.2;
+            /*z-index: -1;*/
+        }
+    </style>
     <title>BOM and DOM Bonus Work JS</title>
+
 </head>
 <body>
-<h1>Here is some webpage text!</h1>
+<div class="container">
+    <br>
+    <h1>BOM and DOM Bonus Work JS</h1>
+    <br>
+    <h5>DOM Bonus Work</h5>
+    <br>
+    <br>
+    <div id="stopwatch">
+        <img class="" src="img/space-jam-watch.jpg" alt="Space Jam Watch">
+        <div class="text-center">Space Jam with a Z Stopwatch</div>
+        <br>
+        <div id="display" class="btn btn-outline-info btn-block "></div>
+        <br>
+        <div id="lap-display" class="btn btn-outline-info btn-block "></div>
+        <br>
+        <div class="row justify-content-center mx-5">
+            <button id="start" class="btn btn-success">Start</button>
+            <button id="reset" class="btn btn-secondary">Reset</button>
+            <button id="pause" class="btn btn-warning">Pause</button>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
 <script src="js/BOM_and_DOM_Bonus_Work.js"></script>
 
 </body>

@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // ================================= MATH OBJECT BONUS
 //
@@ -13,21 +13,21 @@
 // BONUS 1: Build a Jack-In-The-Box
 //
 // Define an object called jackBox.
-var i = 0;
-var jackBox = {
-    triggered: false,
-    play: setInterval(function()){
-        if (triggered === false){
-        console.log(lyrics[i]);
-        i++
-        }
-        },1000)
-    windUp: function () {
-        if ()
-    },
-    lyrics: ["All a-...","-round the ...","mulberry...","bush, The...","monkey...","chased the...","wea-...","...-sel","The monkey...","stopped to...","pull up his...","sock,...","Pop!...","goes the...","wea-...","-sel."]
-        };
-var intervalId = null;
+// var i = 0;
+// var jackBox = {
+//     triggered: false,
+//     play: setInterval(function()){
+//         if (triggered === false){
+//         console.log(lyrics[i]);
+//         i++
+//         }
+//         },1000)
+//     windUp: function () {
+//         if ()
+//     },
+//     lyrics: ["All a-...","-round the ...","mulberry...","bush, The...","monkey...","chased the...","wea-...","...-sel","The monkey...","stopped to...","pull up his...","sock,...","Pop!...","goes the...","wea-...","-sel."]
+//         };
+// var intervalId = null;
 
 
 // Include properties for...
@@ -92,6 +92,71 @@ var intervalId = null;
 // 3) reset button to reset the time to zero
 // 4) pause button to stop the stop watch
 //
+
+
+//
+// Start
+//
+// Reset
+//
+// Pause
+
+
+var count = 0;
+
+var max  = 10000;
+
+var interval = 10;
+
+var timer;
+
+
+
+// var timer = setInterval(function () {
+//     if (count >= max){
+//         clearInterval(timer);
+//         console.log("all done")
+//     }
+//     $('#display').html(count);
+//     console.log(count);
+//     count += interval;
+// },interval);
+$('#display').on().html(count);
+$('#lap-display').on().html(count);
+
+
+$('#start').on('click', function () {
+
+    timer = setInterval(function () {
+        if (count >= max) {
+            clearInterval(timer);
+            console.log("all done")
+        }
+        $('#display').html(count/1000);
+        console.log(count);
+        count += interval;
+    }, interval);
+
+});
+$("#reset").on("click", function(){
+    var savedTime = count;
+    $('#lap-display').html(savedTime/1000);
+    count = 0;
+    $('#display').html(count);
+
+});
+
+// $("#reset").on("click", function(){
+//     var savedTime = count;
+//     $('#lap-display').html(savedTime);
+//
+// });
+
+$("#pause").on("click", function(){
+    clearInterval(timer);
+});
+
+
 // Additional Features:
 //    1) store a list of times in an aside div that are appended to every time the reset button is hit
 //    2) add delete buttons for each stored time that removes the time from the aside div

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Weather Map</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="text-center">Weather Map</h1>
+
+</div>
+
+
+
+<script         src="js/jquery-3.3.1.js"></script>
+<script         src="js/keys.js"></script>
+<script>
+    $(document).ready(function() {
+        "use strict";
+
+        var darkSkyUrl = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/' + darkSkyKey + '/29.4241,-98.4936';
+
+        $.get(darkSkyUrl).done(function (data) {
+            console.log(data);
+        });
+
+
+
+
+
+
+    });
+</script>
+
+</body>
+</html>
