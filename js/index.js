@@ -1,5 +1,7 @@
 'use strict';
 
-import {message} from '/js/say-hello';
+const data = require('./say-hello.js');
 
-console.log(message());
+// import {niceMessage} from "./say-hello.js";
+
+console.log(data);
