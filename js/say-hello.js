@@ -1,9 +1,7 @@
 "use strict";
 
-const niceMessage = function() {
+export const niceMessage = () => {
     return 'The world is more unique with you in it.'
 };
 
-module.exports = niceMessage();
-
-// export let niceMessage;
+// module.exports = niceMessage();
